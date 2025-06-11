@@ -10,9 +10,23 @@ function Login({changeScreen}){
 
 
 
-    return <div>
-        <h1>This is the log in page</h1>
-        <button onClick={logInOnClick}> Click here to log in</button>
+    return <div className="login-container">
+       <div className="login-square gradient-border">
+
+        <div className="login-title">
+            <h1>Job Tracker</h1>
+        </div>
+
+        <div className="login-fields">
+            <input className="user-field" type="text" />
+            <input className="password-field" type="text" />
+        </div>
+
+        <div className="login-button-field">
+            <button className="login-button">Login</button>
+        </div>
+
+       </div>
     </div>
 }
 
