@@ -26,12 +26,7 @@ function App() {
   const rejected = applicationList.filter(item => item.status === "Rejected").length
   const offered = applicationList.filter(item => item.status === "Offered").length
 
-  console.log(offered)
-  console.log(interview)
-  console.log(rejected)
-  console.log(applied)
-
-
+  
   function addToList(object){
     console.log(applicationList)
     setList(prev => [...prev, object])

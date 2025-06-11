@@ -65,8 +65,9 @@ body{
 
 .gradient-text {
     background: linear-gradient( to right, #fa0079, #3de0fd);
-    background-size: 9rem;
+    background-size: 8rem;
     background-clip: text;
+    font-weight: bolder;
     color: transparent;
   }
 
