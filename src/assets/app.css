@@ -334,6 +334,12 @@ body{
     width: 100%;
 }
 
+.applications-drop-down{
+    width: 10rem;
+    font-size: x-large;
+    margin-top: 0.3rem;
+}
+
 .list-item{
     display: flex;
     align-items: center;
@@ -345,6 +351,31 @@ body{
     padding-right: 2rem;
     padding-bottom: 1rem;
     width: 100%;
+}
+
+.job-title{
+    flex: 2;
+    text-align: left;
+}
+
+.job-company{
+    flex: 2;
+    text-align: center;
+}
+
+.job-date{
+    flex: 2;
+    text-align: center;
+}
+
+.job-status{
+    flex: 2;
+    text-align: center;
+}
+
+.job-delete{
+    flex: 0.1;
+    text-align: right;
 }
 
 

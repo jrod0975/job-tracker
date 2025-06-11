@@ -7,13 +7,12 @@ function Applications({applicationList, deleteFromList, darkMode}){
     const filteredApplications = applicationList.filter(application =>{
         return statusFilter === "All" || application.status === statusFilter
     })
-
    
     return <div className="main-container">
         <div className={darkMode ? "dark-mode-body body-container-applications" : "body-container-applications"}>
             <div className="greeting-container-applications">
                 <h1>Applications</h1>
-                <select value={statusFilter} onChange={(e) => setStatusFilter(e.target.value)}>
+                <select className="applications-drop-down" value={statusFilter} onChange={(e) => setStatusFilter(e.target.value)}>
                     <option value="All">All</option>
                     <option value="Applied">Applied</option>
                     <option value="Interview">Interview</option>
@@ -27,11 +26,11 @@ function Applications({applicationList, deleteFromList, darkMode}){
                         <li key={item.id}>
                             <div className="list-item">
 
-                            <h2>{item.title}</h2>
-                            <h2>{item.company}</h2>
-                            <h2>{item.date}</h2>
-                            <h2>{item.status}</h2>
-                            <button onClick={() => deleteFromList(item)} type="button">🗑️</button>
+                            <h2 className="job-title">{item.title}</h2>
+                            <h2 className="job-company">{item.company}</h2>
+                            <h2 className="job-date">{item.date}</h2>
+                            <h2 className="job-status">{item.status}</h2>
+                            <button className="job-delete" onClick={() => deleteFromList(item)} type="button">🗑️</button>
 
                             </div>
                            

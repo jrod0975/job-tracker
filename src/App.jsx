@@ -38,7 +38,11 @@ function App() {
   }
 
   function deleteFromList(applicationToDelete){
-    setList(prev => prev.filter(item => item.id !== applicationToDelete.id))
+    const confirmDelete = window.confirm("Are you sure you want to delete this job application?")
+    if (confirmDelete){
+      setList(prev => prev.filter(item => item.id !== applicationToDelete.id))
+    }
+    else return
   }
 
 
