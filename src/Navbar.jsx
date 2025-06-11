@@ -24,7 +24,7 @@ function Navbar({ changeScreen, setDarkMode, darkMode }){
                 <li> <a onClick={(event) => handleClick(event, "dashboard")} href="">Dashboard</a></li>
                 <li> <a onClick={(event) => handleClick(event, "applications")} href="">Applications</a></li>
                 <li> <a onClick={(event) => handleClick(event, "addnew")} href="">Add New</a></li>
-                <li> <a href="">Log Out</a></li>
+                <li> <a onClick={(event) => handleClick(event, "login")} href="">Log Out</a></li>
                 <li><a onClick={handleLight} href="">{darkMode ? "🔆" : "🌙"}</a></li>
             </ol>
         </div>
